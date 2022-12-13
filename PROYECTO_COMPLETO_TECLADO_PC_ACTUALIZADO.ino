@@ -1908,7 +1908,7 @@ void base_datos_protocolo(int CONDUCTOR_1, String factura_string, float galones_
     lcd.print(F("DATOS ENVIADOS A"));
     lcd.setCursor(0, 3);
     lcd.print(F("BASE DE DATOS"));
-    delay(4000);
+    delay(8000);
             
         if(bandera_datos==1)                                              // BANDERA PARA UNA SOLA EJECUCION
         {
@@ -1961,7 +1961,7 @@ void base_datos_protocolo(int CONDUCTOR_1, String factura_string, float galones_
       Serial.println("****** ERROR DE CONEXION A LA BASE DE DATOS ******");
       Serial.println("");
     #endif
-    delay(4000); 
+    delay(8000); 
     }
 }
 
@@ -1988,7 +1988,7 @@ void base_datos_gas(String nombre, String cedula, float galones, String movil)
     lcd.print(F("DATOS ENVIADOS A"));
     lcd.setCursor(0, 3);
     lcd.print(F("BASE DE DATOS"));    
-    delay(4000);
+    delay(8000);
     
 // MEDICION DE NIVEL AÑADIDA
 
@@ -2132,7 +2132,7 @@ void base_datos_gas(String nombre, String cedula, float galones, String movil)
     Serial.println("****** CLIENTE DESCONECTADO ******");
     Serial.println("");
 #endif
-    delay(4000);
+    delay(8000);
     }
 }
 
